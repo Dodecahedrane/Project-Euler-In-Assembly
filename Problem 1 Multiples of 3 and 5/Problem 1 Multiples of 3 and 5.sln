@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Problem 1 Multiples of 3 and 5", "Problem 1 Multiples of 3 and 5\Problem 1 Multiples of 3 and 5.vcxproj", "{B6BEFEAA-AFE5-45FC-A42A-13B2F0191832}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6BEFEAA-AFE5-45FC-A42A-13B2F0191832}.Debug|x64.ActiveCfg = Debug|x64
+		{B6BEFEAA-AFE5-45FC-A42A-13B2F0191832}.Debug|x64.Build.0 = Debug|x64
+		{B6BEFEAA-AFE5-45FC-A42A-13B2F0191832}.Debug|x86.ActiveCfg = Debug|Win32
+		{B6BEFEAA-AFE5-45FC-A42A-13B2F0191832}.Debug|x86.Build.0 = Debug|Win32
+		{B6BEFEAA-AFE5-45FC-A42A-13B2F0191832}.Release|x64.ActiveCfg = Release|x64
+		{B6BEFEAA-AFE5-45FC-A42A-13B2F0191832}.Release|x64.Build.0 = Release|x64
+		{B6BEFEAA-AFE5-45FC-A42A-13B2F0191832}.Release|x86.ActiveCfg = Release|Win32
+		{B6BEFEAA-AFE5-45FC-A42A-13B2F0191832}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B9A83F4C-CC80-4025-9914-98C586867A1F}
+	EndGlobalSection
+EndGlobal
