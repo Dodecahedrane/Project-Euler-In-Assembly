@@ -6,12 +6,12 @@ ExitProcess PROTO, dwExitCode: DWORD  ; Exit process prototype
 
 .data ; data segment
 	
-	multiples DWORD ?
+	mults DWORD ?
 	rem DWORD ?
 	quo DWORD ?
 	i DWORD 1
 	cnt DWORD ?
-	max DWORD 1001
+	max DWORD 1000
 	sum DWORD ?
 
 .code ; code segment
@@ -42,7 +42,7 @@ main PROC ; main procedure
 
 	increment:
 
-		;increment i then jump to test if less than max or jump to done if not
+		;increment i then jump to test if equal to max or jump to done if not
 		inc i
 		mov edx, i
 		cmp edx, max
@@ -53,8 +53,8 @@ main PROC ; main procedure
 
 		;incrment cnt then append to array
 		inc cnt
-		lea ebx, multiples
-		mov [ebx + TYPE multiples * cnt], i
+		lea ebx, mults
+		mov [ebx + TYPE mults * cnt], i
 		jmp increment
 
 	done:
