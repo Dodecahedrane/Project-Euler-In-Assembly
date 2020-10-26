@@ -6,7 +6,7 @@ ExitProcess PROTO, dwExitCode: DWORD  ; Exit process prototype
 
 .data ; data segment
 	
-	mults DWORD ?
+	arr DWORD ?
 	rem DWORD ?
 	quo DWORD ?
 	i DWORD 1
@@ -53,8 +53,8 @@ main PROC ; main procedure
 
 		;incrment cnt then append to array
 		inc cnt
-		lea ebx, mults
-		mov [ebx + TYPE mults * cnt], i
+		lea ebx, arr
+		mov [ebx + TYPE arr * cnt], i
 		jmp increment
 
 	done:
