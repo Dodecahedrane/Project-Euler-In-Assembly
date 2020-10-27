@@ -6,13 +6,11 @@ ExitProcess PROTO, dwExitCode: DWORD  ; Exit process prototype
 
 .data ; data segment
 	
-	array DWORD 1000 DUP(0h)		;malloc 1000 bytes of the stack (or at least i think thats what this is doing lol)
-	rem DWORD ?
+	array DWORD 1000 DUP(0h)
 	quo DWORD ?
 	i DWORD 1
 	max DWORD 1000
 	sum DWORD ?
-	arrayAdd DWORD ?
 
 .code ; code segment
 
