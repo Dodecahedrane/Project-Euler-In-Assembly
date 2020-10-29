@@ -6,43 +6,46 @@ ExitProcess PROTO, dwExitCode: DWORD  ; Exit process prototype
 
 .data ; data segment
 	
-	sum DWORD ?
-	current DWORD ?
+	sum DWORD 2			;because first loop misses first two digits in sequeence
+	last DWORD 1
+	current DWORD 2
 
 
 .code ; code segment
 
 main PROC ; main procedure
-	mov eax, 1
-	mov ebx, 2
 
 	increment:
-		mov eax,
-		mov ebx,
+		mov eax, last
+		mov ebx, current
 		add eax, ebx
+		mov ecx, last
+		mov last, ebx
 		mov current, eax
-		mov 
 		
-		;check if even
-		mov ecx, 2
-		div ecx
-		xor edx, edx
+		mov ebx, 2
+		mov eax, current
+		xor edx, edx			
+		div ebx					
 		cmp edx, 0
 		je check
 		jmp increment
 		
 
-
 	check:
 		;check if more than 4 million
-		cmp edx, 4000000
+		cmp current, 4000000
 		;if it isnt then add
-		jne addToSum
+		jl addToSum
 		;if it is jump to done
 		jmp done
 	
 	addToSum:
-		mov eax, 
+		mov eax, current
+		mov ebx, sum
+		add eax, ebx
+		mov sum, eax
+		jmp increment
 
 	done:
 	INVOKE ExitProcess, 0 ; call exit function
