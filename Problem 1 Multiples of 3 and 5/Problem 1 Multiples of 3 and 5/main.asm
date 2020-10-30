@@ -27,7 +27,7 @@ main PROC ; main procedure
 		div ebx
 		mov quo, edx
 		cmp quo, 0
-		je quoZero
+		je remZero
 
 		;div by 3 then test, jump to quoZero if true
 		mov ebx, 3
@@ -37,7 +37,7 @@ main PROC ; main procedure
 		mov quo, edx
 		mov ecx, 0
 		cmp ecx, quo
-		je quoZero
+		je remZero
 	    
 		jmp increment
 
@@ -51,7 +51,7 @@ main PROC ; main procedure
 		jmp testFiveThree
 		
 
-	quoZero:
+	remZero:
 
 		;incrment cnt then append to array
 		lea ebx, array
