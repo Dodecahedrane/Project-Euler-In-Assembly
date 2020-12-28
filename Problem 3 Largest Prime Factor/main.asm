@@ -26,11 +26,22 @@ main PROC ; main procedure
         ;else return d as ans
 
     
-    whileAEqualsB:
-        
+    whileANotEqualsB:
+        ;cmp a and b
+        ;if less jmp whileAGreaterB
+        ;if greater than jmp whileBGreaterA
+        ;cmp a and b
+        ;if not equal jmp whileANotEqualsB
+        ;else return a as gcd of a and b
+
+    whileAGreaterB:
+        ;c = a – b
+        ;a = c
 
 
-
+    whileBGreateA:
+        ;c - b - a
+        ;b = c
 
 	INVOKE ExitProcess, 0 ; call exit function
   
@@ -49,3 +60,5 @@ END main  ; stop assembling
 ;         b = c
 ;     Loop
 ; Loop
+
+;A is gcd
