@@ -10,6 +10,7 @@ ExitProcess PROTO, dwExitCode: DWORD  ; Exit process prototype
     y DWORD ?
     d DWORD ?
     xMinusYAbs  DWORD ?
+    ans DWORD ?
     
 
 .code ; code segment
